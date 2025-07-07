@@ -1,0 +1,43 @@
+# --- Secrets and Credentials ---
+# This prevents your file with API keys from being uploaded.
+.env
+
+# --- Python Cache and Compiled Files ---
+# These files are generated automatically by Python.
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Virtual Environment Folders ---
+# Virtual environments are specific to your machine.
+# ADDED a new line here for your specific folder name.
+myenv/
+venv/
+env/
+.venv/
+*.venv
+.env/
+*.env
+
+# --- IDE / Editor Configuration ---
+# Ignores settings files from popular editors.
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# --- Operating System Files ---
+# Ignores metadata files created by macOS and Windows.
+.DS_Store
+Thumbs.db
+
+# --- Output Files ---
+# Example for ignoring a generated data file.
+clan_data.json
+
+# --- Testing and Coverage ---
+# Ignores files related to testing and code coverage reports.
+.pytest_cache/
+.coverage
+htmlcov/
