@@ -1,0 +1,153 @@
+@font-face {
+  font-family: 'ClanFont';
+  src: url('font.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #e8e8e0;
+  font-family: 'ClanFont', Arial, sans-serif;
+  margin: 20px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  background-color: #f8f8f4;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 12px 24px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 0 #aaa;
+  font-weight: bold;
+  font-size: 1em;
+  color: #E7E9EA;
+  text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black,
+     3px  3px 0 black;
+}
+
+.rank {
+  width: 50px;
+  text-align: left;
+}
+
+.name {
+  flex-grow: 1;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.donations,
+.capital,
+.games,
+.stars,
+.score {
+  width: 180px;
+  text-align: center;
+  padding-left: 0;     
+}
+
+#clan-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #dedad0;
+  border: 3px solid #b8b4a8;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 0 #aaa;
+}
+
+#clan-banner img {
+  width: 100px;
+  height: 100px;
+  border: 3px solid #aaa;
+  border-radius: 12px;
+}
+
+#clan-info {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+#clan-name {
+  margin: 0;
+  font-size: 2em;
+  color: #333;
+  text-shadow:
+    -1px -1px 0 #fff,
+     1px -1px 0 #fff,
+    -1px  1px 0 #fff,
+     1px  1px 0 #fff;
+}
+
+#clan-description {
+  white-space: pre-line;
+  margin-top: 10px;
+  font-size: 1em;
+  color: #333;
+}
+
+#clan-meta {
+  text-align: right;
+  font-size: 1.2em;
+  color: #444;
+  white-space: nowrap;
+}
+
+.row.header {
+  background-color: #444;
+  color: #fff;
+  text-shadow: none;
+  font-size: 1em;
+  font-weight: bold;
+  border: 2px solid #222;
+  padding: 10px 24px;
+}
+
+.tabs {
+  display: flex;
+  background-color: #e8e8e0;
+  padding-top: 10px;
+  justify-content: center;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 0;
+}
+
+.tab {
+  background-color: #5c524f;
+  color: white;
+  padding: 12px 30px;
+  margin: 0 4px;
+  border-radius: 10px 10px 0 0;
+  font-weight: bold;
+  font-size: 1.2em;
+  cursor: pointer;
+  box-shadow: inset 0 -4px 0 #000;
+  text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
+.tab.active {
+  background-color: #f3f1ed;
+  color: black;
+  box-shadow: inset 0 -4px 0 #ccc;
+}
+
+.page {
+  background-color: #e8e8e0;
+  padding: 20px;
+  border-top: 2px solid #ccc;
+  border-radius: 0 0 10px 10px;
+}
+
+

@@ -32,10 +32,6 @@ env/
 .DS_Store
 Thumbs.db
 
-# --- Output Files ---
-# Example for ignoring a generated data file.
-clan_data.json
-
 # --- Testing and Coverage ---
 # Ignores files related to testing and code coverage reports.
 .pytest_cache/
