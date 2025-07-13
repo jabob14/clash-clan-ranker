@@ -48,6 +48,8 @@ body {
   margin-top: 10px;
   font-size: 1em;
   color: #333;
+  /* ----> DENNA RAD ÄR TILLAGD FÖR ATT FIXA LÄNKEN <---- */
+  overflow-wrap: break-word;
 }
 
 #clan-meta {
