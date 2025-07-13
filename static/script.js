@@ -7,7 +7,10 @@ fetch('output/clan_data.json')
     document.getElementById("clan-name").textContent = clanInfo.name;
     const descriptionElement = document.getElementById("clan-description");
     const url = "https://docs.google.com/document/d/e/2PACX-1vR_V7CAp-Ay7loZoJUCGJmnhKkIVpiCuCCwFKg_1mtCWyi0oAHF79ScKXb1p1Wmxhm1-rlZS_QHUBlG/pub";
-    descriptionElement.innerHTML = `Ranking sysytem för clanen COC BOYS <br> För mer info: <a href="${url}" target="_blank">${url}</a>`;
+    
+    // MODIFIED LINE: The text "För mer info" is now the clickable link.
+    descriptionElement.innerHTML = `Ranking för COC BOYS <br> <a href="${url}" target="_blank">För mer info</a>`;
+    
     document.getElementById("clan-level").textContent = `Level: ${clanInfo.level}`;
     document.getElementById("clan-members").textContent = `Members: ${clanInfo.members}`;
 
@@ -44,7 +47,6 @@ fetch('output/clan_data.json')
         row.style.backgroundColor = rankColors[rank];
       }
       
-      // Använd data-attribut för att lagra rubrikerna, vilket gör det enklare i CSS
       row.innerHTML = `
         <div class="rank">${rank}</div>
         <div class="name">${member.name}</div>
