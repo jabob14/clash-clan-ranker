@@ -8,7 +8,7 @@
 body {
   background-color: #e8e8e0;
   font-family: 'ClanFont', Arial, sans-serif;
-  margin: 10px; /* Minskad marginal för mobiler */
+  margin: 20px;
 }
 
 /* --- Huvud-header för klanen --- */
@@ -129,9 +129,14 @@ body {
     font-size: 1.5em; /* Något mindre text på mobilen */
   }
 
+  #clan-description {
+    font-size: 0.9em; /* Minskad textstorlek för beskrivningen */
+  }
+
   #clan-meta {
     text-align: center;
     margin-top: 15px;
+    font-size: 0.9em; /* Samma storlek som beskrivningen för konsistens */
   }
 
   /* --- Datalista anpassning --- */
