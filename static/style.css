@@ -8,50 +8,10 @@
 body {
   background-color: #e8e8e0;
   font-family: 'ClanFont', Arial, sans-serif;
-  margin: 20px;
+  margin: 10px; /* Minskad marginal för mobiler */
 }
 
-.row {
-  display: flex;
-  align-items: center;
-  background-color: #f8f8f4;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-  padding: 12px 24px;
-  margin-bottom: 10px;
-  box-shadow: 0 2px 0 #aaa;
-  font-weight: bold;
-  font-size: 1em;
-  color: #E7E9EA;
-  text-shadow:
-    -1px -1px 0 black,
-     1px -1px 0 black,
-    -1px  1px 0 black,
-     1px  1px 0 black,
-     3px  3px 0 black;
-}
-
-.rank {
-  width: 50px;
-  text-align: left;
-}
-
-.name {
-  flex-grow: 1;
-  text-align: left;
-  padding-left: 10px;
-}
-
-.donations,
-.capital,
-.games,
-.stars,
-.score {
-  width: 180px;
-  text-align: center;
-  padding-left: 0;     
-}
-
+/* --- Huvud-header för klanen --- */
 #clan-header {
   display: flex;
   align-items: flex-start;
@@ -80,11 +40,7 @@ body {
   margin: 0;
   font-size: 2em;
   color: #333;
-  text-shadow:
-    -1px -1px 0 #fff,
-     1px -1px 0 #fff,
-    -1px  1px 0 #fff,
-     1px  1px 0 #fff;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 
 #clan-description {
@@ -101,6 +57,43 @@ body {
   white-space: nowrap;
 }
 
+/* --- Datalista (Desktop) --- */
+.row {
+  display: flex;
+  align-items: center;
+  background-color: #f8f8f4;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 12px 24px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 0 #aaa;
+  font-weight: bold;
+  font-size: 1em;
+  color: #E7E9EA;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black, 3px 3px 0 black;
+}
+
+.rank {
+  width: 50px;
+  text-align: left;
+}
+
+.name {
+  flex-grow: 1;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.donations,
+.capital,
+.games,
+.stars,
+.score {
+  width: 180px;
+  text-align: center;
+  padding-left: 0;
+}
+
 .row.header {
   background-color: #444;
   color: #fff;
@@ -111,43 +104,86 @@ body {
   padding: 10px 24px;
 }
 
-.tabs {
-  display: flex;
-  background-color: #e8e8e0;
-  padding-top: 10px;
-  justify-content: center;
-  border-radius: 10px 10px 0 0;
-  margin-bottom: 0;
+/* ------------------------------------------- */
+/* --- MOBILANPASSNING (MEDIA QUERIES) --- */
+/* ------------------------------------------- */
+@media (max-width: 768px) {
+  body {
+    margin: 10px;
+    font-size: 14px; /* Justera bas-fontstorlek för bättre läsbarhet */
+  }
+
+  /* --- Header anpassning --- */
+  #clan-header {
+    flex-direction: column; /* Stapla elementen vertikalt */
+    align-items: center;   /* Centrera elementen */
+    text-align: center;
+  }
+
+  #clan-info {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  
+  #clan-name {
+    font-size: 1.5em; /* Något mindre text på mobilen */
+  }
+
+  #clan-meta {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  /* --- Datalista anpassning --- */
+  /* Göm desktop-header på mobil */
+  .row.header {
+    display: none;
+  }
+
+  /* Gör om varje rad till ett "kort" */
+  .row {
+    flex-direction: column; /* Stapla allt innehåll i raden vertikalt */
+    align-items: flex-start; /* Vänsterjustera innehållet i kortet */
+    padding: 15px;
+  }
+  
+  /* Justera alla kolumner i kortet */
+  .row > div {
+    width: 100%; /* Ta upp full bredd */
+    text-align: left; /* Vänsterjustera all text */
+    padding: 5px 0;
+    display: flex; /* Använd flex för att placera etikett och värde */
+    justify-content: space-between; /* Placera värdet till höger */
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .row > div:last-child {
+      border-bottom: none;
+  }
+
+  /* Rank och Namn visas speciellt */
+  .rank {
+      font-size: 1.5em;
+      font-weight: bold;
+      justify-content: flex-start; /* Ta bort space-between för rank */
+  }
+  .name {
+      font-size: 1.2em;
+      color: #333; /* Ändra färg för läsbarhet */
+      text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+      justify-content: flex-start;
+  }
+  
+  /* Använd ::before för att lägga till rubriken framför varje värde */
+  .donations::before,
+  .capital::before,
+  .games::before,
+  .stars::before,
+  .score::before {
+    content: attr(data-label); /* Hämta text från data-label attributet */
+    font-weight: normal;
+    color: #555;
+    text-shadow: none;
+    margin-right: 10px;
+  }
 }
-
-.tab {
-  background-color: #5c524f;
-  color: white;
-  padding: 12px 30px;
-  margin: 0 4px;
-  border-radius: 10px 10px 0 0;
-  font-weight: bold;
-  font-size: 1.2em;
-  cursor: pointer;
-  box-shadow: inset 0 -4px 0 #000;
-  text-shadow:
-    -1px -1px 0 black,
-     1px -1px 0 black,
-    -1px  1px 0 black,
-     1px  1px 0 black;
-}
-
-.tab.active {
-  background-color: #f3f1ed;
-  color: black;
-  box-shadow: inset 0 -4px 0 #ccc;
-}
-
-.page {
-  background-color: #e8e8e0;
-  padding: 20px;
-  border-top: 2px solid #ccc;
-  border-radius: 0 0 10px 10px;
-}
-
-

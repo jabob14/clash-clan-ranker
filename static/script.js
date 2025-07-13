@@ -43,15 +43,16 @@ fetch('output/clan_data.json')
       if (rankColors[rank]) {
         row.style.backgroundColor = rankColors[rank];
       }
-
+      
+      // Använd data-attribut för att lagra rubrikerna, vilket gör det enklare i CSS
       row.innerHTML = `
         <div class="rank">${rank}</div>
         <div class="name">${member.name}</div>
-        <div class="donations">${member.donations}</div>
-        <div class="capital">${member.capitalAttacks}</div>
-        <div class="games">${member.clanGamesScore}</div>
-        <div class="stars">${member.clanWarLeagueStars}</div>
-        <div class="score">${member.totalScore}</div>
+        <div class="donations" data-label="Donations">${member.donations}</div>
+        <div class="capital" data-label="Capital Hits">${member.capitalAttacks}</div>
+        <div class="games" data-label="Clan Games">${member.clanGamesScore}</div>
+        <div class="stars" data-label="CWL Stars">${member.clanWarLeagueStars}</div>
+        <div class="score" data-label="Total Score">${member.totalScore}</div>
       `;
       membersContainer.appendChild(row);
       rank++;
@@ -66,8 +67,8 @@ function timeSince(date) {
   const minutes = Math.floor(seconds / 60);
   const hours = Math.floor(minutes / 60);
   const days = Math.floor(hours / 24);
-  if (days > 0) return `${days} day${days !== 1 ? 's' : ''}`;
-  if (hours > 0) return `${hours} hour${hours !== 1 ? 's' : ''}`;
-  if (minutes > 0) return `${minutes} minute${minutes !== 1 ? 's' : ''}`;
-  return `${seconds} second${seconds !== 1 ? 's' : ''}`;
+  if (days > 0) return `${days} day${days > 1 ? 's' : ''}`;
+  if (hours > 0) return `${hours} hour${hours > 1 ? 's' : ''}`;
+  if (minutes > 0) return `${minutes} minute${minutes > 1 ? 's' : ''}`;
+  return `${seconds} second${seconds > 1 ? 's' : ''}`;
 }
