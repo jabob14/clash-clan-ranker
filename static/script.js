@@ -5,7 +5,9 @@ fetch('output/clan_data.json')
     
     document.getElementById("clan-badge").src = clanInfo.badge;
     document.getElementById("clan-name").textContent = clanInfo.name;
-    document.getElementById("clan-description").textContent = clanInfo.description;
+    const descriptionElement = document.getElementById("clan-description");
+    const url = "https://docs.google.com/document/d/e/2PACX-1vR_V7CAp-Ay7loZoJUCGJmnhKkIVpiCuCCwFKg_1mtCWyi0oAHF79ScKXb1p1Wmxhm1-rlZS_QHUBlG/pub";
+    descriptionElement.innerHTML = `Ranking sysytem för clanen COC BOYS <br> För mer info: <a href="${url}" target="_blank">${url}</a>`;
     document.getElementById("clan-level").textContent = `Level: ${clanInfo.level}`;
     document.getElementById("clan-members").textContent = `Members: ${clanInfo.members}`;
 
