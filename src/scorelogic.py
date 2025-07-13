@@ -47,4 +47,4 @@ def reset_scores():
         member_list[member]['clanGamesScore'] = 0
         member_list[member]['capitalAttacks'] = 0
         member_list[member]['clanWarLeagueStars'] = 0
-    update_score(member_list)
+    return update_score(member_list)

@@ -9,7 +9,7 @@ from rich.panel import Panel
 from rich.table import Table
 from dotenv import load_dotenv
 from filehandler import write_to_file, read_from_file
-from clandata import update_data
+from clandata import update_data, reset_data
 
 console = Console()
 
@@ -84,6 +84,7 @@ def reset_score_menu():
     awnser = questionary.confirm("Are you sure you want to reset the scores?").ask()
     if awnser:
         console.print("[bold cyan]Reseting the scores...[/bold cyan]")
+        reset_data()
         time.sleep(2)
         console.print("[bold green]Scores have been reset![/bold green]")
         time.sleep(2)

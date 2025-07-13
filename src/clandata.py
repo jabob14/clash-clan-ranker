@@ -1,6 +1,6 @@
 import coc
 from filehandler import read_from_file, write_to_file
-from scorelogic import sort_members_by_score, update_score
+from scorelogic import sort_members_by_score, update_score, reset_scores
 
 async def get_member_data(members):
     member_list = {}
@@ -73,3 +73,9 @@ def get_current_member_data():
     member_data = clan_data["memberInfo"]
     return member_data
 
+def reset_data():
+    clan_data = read_from_file()
+    clan_info = clan_data['clanInfo']
+    member_list = reset_scores()
+    member_list = sort_members_by_score(member_list)
+    write_to_file(clan_info, member_list)
