@@ -1,0 +1,4 @@
+coc.py
+questionary
+rich
+python-dotenv
