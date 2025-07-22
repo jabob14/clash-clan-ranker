@@ -1,5 +1,5 @@
 {
-    "lastUpdated": "2025-07-22T11:40:49Z",
+    "lastUpdated": "2025-07-22T16:00:58Z",
     "clanInfo": {
         "name": "COC BOYS",
         "level": 12,
@@ -15,7 +15,7 @@
             "clanGamesScore": 4000,
             "clanWarLeagueStars": 0,
             "capitalAttacks": 6,
-            "totalScore": 1600
+            "totalScore": 6100
         },
         "#29J0CP0G0": {
             "name": "BIG-SHAFT",
@@ -24,7 +24,25 @@
             "clanGamesScore": 4000,
             "clanWarLeagueStars": 0,
             "capitalAttacks": 6,
-            "totalScore": 600
+            "totalScore": 5100
+        },
+        "#202LJGYLL": {
+            "name": "KfftwStardustYT",
+            "townhall": 15,
+            "donations": 405,
+            "clanGamesScore": 4000,
+            "clanWarLeagueStars": 0,
+            "capitalAttacks": 6,
+            "totalScore": 5100
+        },
+        "#9CJJGU2V8": {
+            "name": "andreas",
+            "townhall": 15,
+            "donations": 537,
+            "clanGamesScore": 850,
+            "clanWarLeagueStars": 0,
+            "capitalAttacks": 6,
+            "totalScore": 1450
         },
         "#R8PG2VL2": {
             "name": "Vktor",
@@ -40,15 +58,6 @@
             "townhall": 17,
             "donations": 427,
             "clanGamesScore": 0,
-            "clanWarLeagueStars": 0,
-            "capitalAttacks": 6,
-            "totalScore": 600
-        },
-        "#9CJJGU2V8": {
-            "name": "andreas",
-            "townhall": 15,
-            "donations": 537,
-            "clanGamesScore": 850,
             "clanWarLeagueStars": 0,
             "capitalAttacks": 6,
             "totalScore": 600
@@ -76,15 +85,6 @@
             "townhall": 14,
             "donations": 94,
             "clanGamesScore": 0,
-            "clanWarLeagueStars": 0,
-            "capitalAttacks": 6,
-            "totalScore": 600
-        },
-        "#202LJGYLL": {
-            "name": "KfftwStardustYT",
-            "townhall": 15,
-            "donations": 405,
-            "clanGamesScore": 4000,
             "clanWarLeagueStars": 0,
             "capitalAttacks": 6,
             "totalScore": 600
