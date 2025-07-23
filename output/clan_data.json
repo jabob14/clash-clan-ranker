@@ -1,5 +1,5 @@
 {
-    "lastUpdated": "2025-07-22T16:00:58Z",
+    "lastUpdated": "2025-07-23T00:12:32Z",
     "clanInfo": {
         "name": "COC BOYS",
         "level": 12,
@@ -35,6 +35,42 @@
             "capitalAttacks": 6,
             "totalScore": 5100
         },
+        "#RV9UUYJG": {
+            "name": "Vilm888",
+            "townhall": 16,
+            "donations": 949,
+            "clanGamesScore": 4000,
+            "clanWarLeagueStars": 0,
+            "capitalAttacks": 6,
+            "totalScore": 5100
+        },
+        "#229P2LP2": {
+            "name": "LamaCraft",
+            "townhall": 17,
+            "donations": 427,
+            "clanGamesScore": 3200,
+            "clanWarLeagueStars": 0,
+            "capitalAttacks": 6,
+            "totalScore": 3800
+        },
+        "#QPV9YQCQL": {
+            "name": "gerzi*",
+            "townhall": 11,
+            "donations": 0,
+            "clanGamesScore": 2300,
+            "clanWarLeagueStars": 0,
+            "capitalAttacks": 6,
+            "totalScore": 2900
+        },
+        "#JU02QQCG": {
+            "name": "Linus",
+            "townhall": 13,
+            "donations": 375,
+            "clanGamesScore": 1800,
+            "clanWarLeagueStars": 0,
+            "capitalAttacks": 6,
+            "totalScore": 2400
+        },
         "#9CJJGU2V8": {
             "name": "andreas",
             "townhall": 15,
@@ -43,6 +79,15 @@
             "clanWarLeagueStars": 0,
             "capitalAttacks": 6,
             "totalScore": 1450
+        },
+        "#299UQUYGQ": {
+            "name": "Sundsax",
+            "townhall": 13,
+            "donations": 0,
+            "clanGamesScore": 300,
+            "clanWarLeagueStars": 0,
+            "capitalAttacks": 6,
+            "totalScore": 900
         },
         "#R8PG2VL2": {
             "name": "Vktor",
@@ -53,19 +98,10 @@
             "capitalAttacks": 6,
             "totalScore": 600
         },
-        "#229P2LP2": {
-            "name": "LamaCraft",
-            "townhall": 17,
-            "donations": 427,
-            "clanGamesScore": 0,
-            "clanWarLeagueStars": 0,
-            "capitalAttacks": 6,
-            "totalScore": 600
-        },
         "#J2YJ99LJ": {
             "name": "anton",
             "townhall": 13,
-            "donations": 249,
+            "donations": 256,
             "clanGamesScore": 0,
             "clanWarLeagueStars": 0,
             "capitalAttacks": 6,
@@ -84,33 +120,6 @@
             "name": "tarzanaden",
             "townhall": 14,
             "donations": 94,
-            "clanGamesScore": 0,
-            "clanWarLeagueStars": 0,
-            "capitalAttacks": 6,
-            "totalScore": 600
-        },
-        "#RV9UUYJG": {
-            "name": "Vilm888",
-            "townhall": 16,
-            "donations": 692,
-            "clanGamesScore": 0,
-            "clanWarLeagueStars": 0,
-            "capitalAttacks": 6,
-            "totalScore": 600
-        },
-        "#JU02QQCG": {
-            "name": "Linus",
-            "townhall": 13,
-            "donations": 375,
-            "clanGamesScore": 0,
-            "clanWarLeagueStars": 0,
-            "capitalAttacks": 6,
-            "totalScore": 600
-        },
-        "#299UQUYGQ": {
-            "name": "Sundsax",
-            "townhall": 13,
-            "donations": 0,
             "clanGamesScore": 0,
             "clanWarLeagueStars": 0,
             "capitalAttacks": 6,
@@ -137,15 +146,6 @@
         "#QPLU99PVU": {
             "name": "KfftwStardust2",
             "townhall": 11,
-            "donations": 0,
-            "clanGamesScore": 0,
-            "clanWarLeagueStars": 0,
-            "capitalAttacks": 6,
-            "totalScore": 600
-        },
-        "#QPV9YQCQL": {
-            "name": "gerzi*",
-            "townhall": 10,
             "donations": 0,
             "clanGamesScore": 0,
             "clanWarLeagueStars": 0,
