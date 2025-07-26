@@ -1,5 +1,5 @@
 {
-    "lastUpdated": "2025-07-25T15:42:53Z",
+    "lastUpdated": "2025-07-26T15:05:14Z",
     "clanInfo": {
         "name": "COC BOYS",
         "level": 12,
@@ -15,6 +15,10 @@
             "clanGamesScore": 4000,
             "clanWarLeagueStars": 0,
             "capitalAttacks": 6,
+            "capitalAttacksWeek1": 6,
+            "capitalAttacksWeek2": 0,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
             "totalScore": 6100
         },
         "#29J0CP0G0": {
@@ -23,8 +27,64 @@
             "donations": 947,
             "clanGamesScore": 4000,
             "clanWarLeagueStars": 0,
-            "capitalAttacks": 6,
-            "totalScore": 5100
+            "capitalAttacks": 12,
+            "capitalAttacksWeek1": 6,
+            "capitalAttacksWeek2": 6,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
+            "totalScore": 5700
+        },
+        "#202LJGYLL": {
+            "name": "KfftwStardustYT",
+            "townhall": 15,
+            "donations": 549,
+            "clanGamesScore": 4000,
+            "clanWarLeagueStars": 0,
+            "capitalAttacks": 12,
+            "capitalAttacksWeek1": 6,
+            "capitalAttacksWeek2": 6,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
+            "totalScore": 5700
+        },
+        "#JU02QQCG": {
+            "name": "Linus",
+            "townhall": 13,
+            "donations": 375,
+            "clanGamesScore": 4000,
+            "clanWarLeagueStars": 0,
+            "capitalAttacks": 12,
+            "capitalAttacksWeek1": 6,
+            "capitalAttacksWeek2": 6,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
+            "totalScore": 5700
+        },
+        "#R8PG2VL2": {
+            "name": "Vktor",
+            "townhall": 16,
+            "donations": 389,
+            "clanGamesScore": 4000,
+            "clanWarLeagueStars": 0,
+            "capitalAttacks": 11,
+            "capitalAttacksWeek1": 6,
+            "capitalAttacksWeek2": 5,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
+            "totalScore": 5600
+        },
+        "#2P9QPGC0": {
+            "name": "Teddo",
+            "townhall": 14,
+            "donations": 503,
+            "clanGamesScore": 4000,
+            "clanWarLeagueStars": 0,
+            "capitalAttacks": 9,
+            "capitalAttacksWeek1": 6,
+            "capitalAttacksWeek2": 3,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
+            "totalScore": 5400
         },
         "#229P2LP2": {
             "name": "LamaCraft",
@@ -33,33 +93,10 @@
             "clanGamesScore": 4000,
             "clanWarLeagueStars": 0,
             "capitalAttacks": 6,
-            "totalScore": 5100
-        },
-        "#JU02QQCG": {
-            "name": "Linus",
-            "townhall": 13,
-            "donations": 375,
-            "clanGamesScore": 4000,
-            "clanWarLeagueStars": 0,
-            "capitalAttacks": 6,
-            "totalScore": 5100
-        },
-        "#RV9UUYJG": {
-            "name": "Vilm888",
-            "townhall": 16,
-            "donations": 994,
-            "clanGamesScore": 4000,
-            "clanWarLeagueStars": 0,
-            "capitalAttacks": 6,
-            "totalScore": 5100
-        },
-        "#202LJGYLL": {
-            "name": "KfftwStardustYT",
-            "townhall": 15,
-            "donations": 505,
-            "clanGamesScore": 4000,
-            "clanWarLeagueStars": 0,
-            "capitalAttacks": 6,
+            "capitalAttacksWeek1": 6,
+            "capitalAttacksWeek2": 0,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
             "totalScore": 5100
         },
         "#QPLU99PVU": {
@@ -69,16 +106,50 @@
             "clanGamesScore": 4000,
             "clanWarLeagueStars": 0,
             "capitalAttacks": 6,
+            "capitalAttacksWeek1": 6,
+            "capitalAttacksWeek2": 0,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
             "totalScore": 5100
         },
-        "#R8PG2VL2": {
-            "name": "Vktor",
+        "#RV9UUYJG": {
+            "name": "Vilm888",
             "townhall": 16,
-            "donations": 389,
-            "clanGamesScore": 2550,
+            "donations": 26,
+            "clanGamesScore": 4000,
             "clanWarLeagueStars": 0,
             "capitalAttacks": 6,
-            "totalScore": 3150
+            "capitalAttacksWeek1": 6,
+            "capitalAttacksWeek2": 0,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
+            "totalScore": 5100
+        },
+        "#PRG08L2Y": {
+            "name": "\u221aNAMIKAZE\u221a",
+            "townhall": 12,
+            "donations": 30,
+            "clanGamesScore": 3300,
+            "clanWarLeagueStars": 0,
+            "capitalAttacks": 2,
+            "capitalAttacksWeek1": 2,
+            "capitalAttacksWeek2": 0,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
+            "totalScore": 3500
+        },
+        "#8802VG9R0": {
+            "name": "Kfftwminidust",
+            "townhall": 8,
+            "donations": 50,
+            "clanGamesScore": 2450,
+            "clanWarLeagueStars": 0,
+            "capitalAttacks": 6,
+            "capitalAttacksWeek1": 6,
+            "capitalAttacksWeek2": 0,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
+            "totalScore": 3050
         },
         "#QPV9YQCQL": {
             "name": "gerzi*",
@@ -87,6 +158,10 @@
             "clanGamesScore": 2300,
             "clanWarLeagueStars": 0,
             "capitalAttacks": 6,
+            "capitalAttacksWeek1": 6,
+            "capitalAttacksWeek2": 0,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
             "totalScore": 2900
         },
         "#9CJJGU2V8": {
@@ -95,26 +170,25 @@
             "donations": 537,
             "clanGamesScore": 1500,
             "clanWarLeagueStars": 0,
-            "capitalAttacks": 6,
-            "totalScore": 2100
+            "capitalAttacks": 10,
+            "capitalAttacksWeek1": 6,
+            "capitalAttacksWeek2": 4,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
+            "totalScore": 2500
         },
-        "#2P9QPGC0": {
-            "name": "Teddo",
+        "#PGL0Y89CP": {
+            "name": "\u2022Pelle\u2022",
             "townhall": 14,
-            "donations": 503,
-            "clanGamesScore": 1500,
+            "donations": 0,
+            "clanGamesScore": 1550,
             "clanWarLeagueStars": 0,
-            "capitalAttacks": 6,
-            "totalScore": 2100
-        },
-        "#PRG08L2Y": {
-            "name": "\u221aNAMIKAZE\u221a",
-            "townhall": 12,
-            "donations": 30,
-            "clanGamesScore": 1500,
-            "clanWarLeagueStars": 0,
-            "capitalAttacks": 2,
-            "totalScore": 1700
+            "capitalAttacks": 0,
+            "capitalAttacksWeek1": 0,
+            "capitalAttacksWeek2": 0,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
+            "totalScore": 1550
         },
         "#9U8Y00908": {
             "name": "@_fadillah",
@@ -123,7 +197,50 @@
             "clanGamesScore": 1500,
             "clanWarLeagueStars": 0,
             "capitalAttacks": 0,
+            "capitalAttacksWeek1": 0,
+            "capitalAttacksWeek2": 0,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
             "totalScore": 1500
+        },
+        "#Q8RJ9YGQV": {
+            "name": "THE GAY POLICE",
+            "townhall": 10,
+            "donations": 0,
+            "clanGamesScore": 1500,
+            "clanWarLeagueStars": 0,
+            "capitalAttacks": 0,
+            "capitalAttacksWeek1": 0,
+            "capitalAttacksWeek2": 0,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
+            "totalScore": 1500
+        },
+        "#J2YJ99LJ": {
+            "name": "anton",
+            "townhall": 13,
+            "donations": 256,
+            "clanGamesScore": 600,
+            "clanWarLeagueStars": 0,
+            "capitalAttacks": 7,
+            "capitalAttacksWeek1": 6,
+            "capitalAttacksWeek2": 1,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
+            "totalScore": 1300
+        },
+        "#U08PYVR8": {
+            "name": "THEO",
+            "townhall": 13,
+            "donations": 68,
+            "clanGamesScore": 0,
+            "clanWarLeagueStars": 0,
+            "capitalAttacks": 12,
+            "capitalAttacksWeek1": 6,
+            "capitalAttacksWeek2": 6,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
+            "totalScore": 1200
         },
         "#299UQUYGQ": {
             "name": "Sundsax",
@@ -132,16 +249,11 @@
             "clanGamesScore": 300,
             "clanWarLeagueStars": 0,
             "capitalAttacks": 6,
+            "capitalAttacksWeek1": 6,
+            "capitalAttacksWeek2": 0,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
             "totalScore": 900
-        },
-        "#J2YJ99LJ": {
-            "name": "anton",
-            "townhall": 13,
-            "donations": 256,
-            "clanGamesScore": 150,
-            "clanWarLeagueStars": 0,
-            "capitalAttacks": 6,
-            "totalScore": 750
         },
         "#2Q298C0U8": {
             "name": "tarzanaden",
@@ -150,6 +262,10 @@
             "clanGamesScore": 0,
             "clanWarLeagueStars": 0,
             "capitalAttacks": 6,
+            "capitalAttacksWeek1": 6,
+            "capitalAttacksWeek2": 0,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
             "totalScore": 600
         },
         "#L2CLJ8J09": {
@@ -159,34 +275,11 @@
             "clanGamesScore": 0,
             "clanWarLeagueStars": 0,
             "capitalAttacks": 6,
+            "capitalAttacksWeek1": 6,
+            "capitalAttacksWeek2": 0,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
             "totalScore": 600
-        },
-        "#U08PYVR8": {
-            "name": "THEO",
-            "townhall": 13,
-            "donations": 68,
-            "clanGamesScore": 0,
-            "clanWarLeagueStars": 0,
-            "capitalAttacks": 6,
-            "totalScore": 600
-        },
-        "#8802VG9R0": {
-            "name": "Kfftwminidust",
-            "townhall": 8,
-            "donations": 0,
-            "clanGamesScore": 0,
-            "clanWarLeagueStars": 0,
-            "capitalAttacks": 6,
-            "totalScore": 600
-        },
-        "#PGL0Y89CP": {
-            "name": "\u2022Pelle\u2022",
-            "townhall": 14,
-            "donations": 0,
-            "clanGamesScore": 450,
-            "clanWarLeagueStars": 0,
-            "capitalAttacks": 0,
-            "totalScore": 450
         },
         "#8Y8Q8QUU0": {
             "name": "\u2b50\u2b50\u2652STARS--OK\u2652\u2b50\u2b50",
@@ -195,16 +288,11 @@
             "clanGamesScore": 0,
             "clanWarLeagueStars": 0,
             "capitalAttacks": 4,
+            "capitalAttacksWeek1": 4,
+            "capitalAttacksWeek2": 0,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
             "totalScore": 400
-        },
-        "#QQPYL0UV": {
-            "name": "max",
-            "townhall": 15,
-            "donations": 0,
-            "clanGamesScore": 0,
-            "clanWarLeagueStars": 0,
-            "capitalAttacks": 0,
-            "totalScore": 0
         },
         "#2PGRRPPUL": {
             "name": "isak",
@@ -213,6 +301,23 @@
             "clanGamesScore": 0,
             "clanWarLeagueStars": 0,
             "capitalAttacks": 0,
+            "capitalAttacksWeek1": 0,
+            "capitalAttacksWeek2": 0,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
+            "totalScore": 0
+        },
+        "#QQPYL0UV": {
+            "name": "max",
+            "townhall": 15,
+            "donations": 0,
+            "clanGamesScore": 0,
+            "clanWarLeagueStars": 0,
+            "capitalAttacks": 0,
+            "capitalAttacksWeek1": 0,
+            "capitalAttacksWeek2": 0,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
             "totalScore": 0
         },
         "#9J8RCGRRR": {
@@ -222,6 +327,10 @@
             "clanGamesScore": 0,
             "clanWarLeagueStars": 0,
             "capitalAttacks": 0,
+            "capitalAttacksWeek1": 0,
+            "capitalAttacksWeek2": 0,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
             "totalScore": 0
         },
         "#QLUC9LG0G": {
@@ -231,6 +340,10 @@
             "clanGamesScore": 0,
             "clanWarLeagueStars": 0,
             "capitalAttacks": 0,
+            "capitalAttacksWeek1": 0,
+            "capitalAttacksWeek2": 0,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
             "totalScore": 0
         },
         "#QQGQUU2J2": {
@@ -240,15 +353,10 @@
             "clanGamesScore": 0,
             "clanWarLeagueStars": 0,
             "capitalAttacks": 0,
-            "totalScore": 0
-        },
-        "#Q8RJ9YGQV": {
-            "name": "THE GAY POLICE",
-            "townhall": 10,
-            "donations": 0,
-            "clanGamesScore": 0,
-            "clanWarLeagueStars": 0,
-            "capitalAttacks": 0,
+            "capitalAttacksWeek1": 0,
+            "capitalAttacksWeek2": 0,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
             "totalScore": 0
         },
         "#P90JV9JG0": {
@@ -258,6 +366,10 @@
             "clanGamesScore": 0,
             "clanWarLeagueStars": 0,
             "capitalAttacks": 0,
+            "capitalAttacksWeek1": 0,
+            "capitalAttacksWeek2": 0,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
             "totalScore": 0
         },
         "#JYLPCLVC": {
@@ -267,6 +379,10 @@
             "clanGamesScore": 0,
             "clanWarLeagueStars": 0,
             "capitalAttacks": 0,
+            "capitalAttacksWeek1": 0,
+            "capitalAttacksWeek2": 0,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
             "totalScore": 0
         },
         "#QLURYQQGJ": {
@@ -276,6 +392,10 @@
             "clanGamesScore": 0,
             "clanWarLeagueStars": 0,
             "capitalAttacks": 0,
+            "capitalAttacksWeek1": 0,
+            "capitalAttacksWeek2": 0,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
             "totalScore": 0
         },
         "#LYRUQGUV8": {
@@ -285,6 +405,10 @@
             "clanGamesScore": 0,
             "clanWarLeagueStars": 0,
             "capitalAttacks": 0,
+            "capitalAttacksWeek1": 0,
+            "capitalAttacksWeek2": 0,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
             "totalScore": 0
         },
         "#2Y2JYV2QR": {
@@ -294,6 +418,10 @@
             "clanGamesScore": 0,
             "clanWarLeagueStars": 0,
             "capitalAttacks": 0,
+            "capitalAttacksWeek1": 0,
+            "capitalAttacksWeek2": 0,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
             "totalScore": 0
         },
         "#GUVQQ8LQ2": {
@@ -303,6 +431,10 @@
             "clanGamesScore": 0,
             "clanWarLeagueStars": 0,
             "capitalAttacks": 0,
+            "capitalAttacksWeek1": 0,
+            "capitalAttacksWeek2": 0,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
             "totalScore": 0
         }
     }

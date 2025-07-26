@@ -51,11 +51,15 @@ def view_clan_ranking():
     table = Table(show_header=True, header_style="bold magenta")
     table.add_column("Rank", style="dim", width=6)
     table.add_column("Name", style="cyan")
-    table.add_column("donations", justify="right")
-    table.add_column("clanGamesScore", justify="right")
-    table.add_column("clanWarLeagueStars", justify="right")
-    table.add_column("capitalAttacks", justify="right")
-    table.add_column("totalScore", justify="right")
+    table.add_column("Donations", justify="right")
+    table.add_column("CG Score", justify="right")
+    table.add_column("CWL Stars", justify="right")
+    table.add_column("CA W1", justify="right")
+    table.add_column("CA W2", justify="right")
+    table.add_column("CA W3", justify="right")
+    table.add_column("CA W4", justify="right")
+    table.add_column("CA Total", justify="right")
+    table.add_column("Total Score", justify="right")
 
     i = 0
     for member in member_data:
@@ -66,6 +70,10 @@ def view_clan_ranking():
             f"{member_data[member]['donations']}",
             f"{member_data[member]['clanGamesScore']}",
             f"{member_data[member]['clanWarLeagueStars']}",
+            f"{member_data[member]['capitalAttacksWeek1']}",
+            f"{member_data[member]['capitalAttacksWeek2']}",
+            f"{member_data[member]['capitalAttacksWeek3']}",
+            f"{member_data[member]['capitalAttacksWeek4']}",
             f"{member_data[member]['capitalAttacks']}",
             f"{member_data[member]['totalScore']}"
         )
@@ -88,7 +96,7 @@ def reset_score_menu():
         time.sleep(2)
         console.print("[bold green]Scores have been reset![/bold green]")
         time.sleep(2)
-    
+
 
 if __name__ == "__main__":
     while True:

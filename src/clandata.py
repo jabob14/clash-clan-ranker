@@ -16,16 +16,24 @@ async def get_member_data(members):
                     }
 
         if current_member not in current_members:
-            member_info["clanGamesScore"] = 0
-            member_info["clanWarLeagueStars"] = 0
-            member_info["capitalAttacks"] = 0
-            member_info["totalScore"] = 0
+            member_info["clanGamesScore"]       = 0
+            member_info["clanWarLeagueStars"]   = 0
+            member_info["capitalAttacks"]       = 0
+            member_info["capitalAttacksWeek1"]  = 0
+            member_info["capitalAttacksWeek2"]  = 0
+            member_info["capitalAttacksWeek3"]  = 0
+            member_info["capitalAttacksWeek4"]  = 0
+            member_info["totalScore"]           = 0
         else:
             member_info["clanGamesScore"] = current_member_data[current_member]["clanGamesScore"]
             member_info["clanWarLeagueStars"] = current_member_data[current_member]["clanWarLeagueStars"]
             member_info["capitalAttacks"] = current_member_data[current_member]["capitalAttacks"]
+            member_info["capitalAttacksWeek1"] = current_member_data[current_member]["capitalAttacksWeek1"]
+            member_info["capitalAttacksWeek2"] = current_member_data[current_member]["capitalAttacksWeek2"]
+            member_info["capitalAttacksWeek3"] = current_member_data[current_member]["capitalAttacksWeek3"]
+            member_info["capitalAttacksWeek4"] = current_member_data[current_member]["capitalAttacksWeek4"]
             member_info["totalScore"] = current_member_data[current_member]["totalScore"]
-            
+
 
         member_list[current_member] = member_info
     return member_list
@@ -42,7 +50,7 @@ async def get_clan_data(clan):
 
 async def update_data(COC_EMAIL, COC_PASSWORD, CLAN_TAG):
     async with coc.Client() as client:
-        
+
         await client.login(COC_EMAIL, COC_PASSWORD)
 
         if not coc.utils.is_valid_tag(CLAN_TAG):
@@ -58,7 +66,7 @@ async def update_data(COC_EMAIL, COC_PASSWORD, CLAN_TAG):
             member_info = sort_members_by_score(member_info)
 
             write_to_file(clan_info, member_info)
-            
+
 
         except coc.NotFound:
             print(f"Clan with tag {CLAN_TAG} was not found.")
