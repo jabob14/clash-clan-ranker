@@ -1,5 +1,4 @@
 import os
-import coc
 import asyncio
 import questionary
 import time
@@ -9,7 +8,8 @@ from rich.panel import Panel
 from rich.table import Table
 from dotenv import load_dotenv
 from filehandler import write_to_file, read_from_file
-from clandata import update_data, reset_data
+from clandata import update_data
+from scorelogic import update_score, sort_members_by_score, reset_scores
 
 console = Console()
 
@@ -44,8 +44,8 @@ def main_menu():
     ).ask()
     return choice
 
-def view_clan_ranking():
-    clan_data = read_from_file()
+def view_clan_ranking(clan_data):
+
     member_data = clan_data['memberInfo']
 
     table = Table(show_header=True, header_style="bold magenta")
@@ -83,42 +83,96 @@ def view_clan_ranking():
 
 def update_data_from_api():
     console.print("[bold cyan]Updating data from API...[/bold cyan]")
-    asyncio.run(update_data(COC_EMAIL, COC_PASSWORD, CLAN_TAG))
+    clan_data = asyncio.run(update_data(COC_EMAIL, COC_PASSWORD, CLAN_TAG))
     time.sleep(2)
     console.print("[bold green]Data updated successfully![/bold green]")
-    time.sleep(4)
+    time.sleep(2)
+    return clan_data
 
-def reset_score_menu():
-    awnser = questionary.confirm("Are you sure you want to reset the scores?").ask()
-    if awnser:
+def reset_score_menu(clan_data):
+    answer = questionary.confirm("Are you sure you want to reset the scores?").ask()
+    if answer:
+        member_info = clan_data['memberInfo']
         console.print("[bold cyan]Reseting the scores...[/bold cyan]")
-        reset_data()
-        time.sleep(2)
+        member_info = reset_scores(member_info)
+        time.sleep(1)
         console.print("[bold green]Scores have been reset![/bold green]")
         time.sleep(2)
+        clan_data['memberInfo'] = member_info
+        write_to_file(clan_data)
+        return clan_data
+    else:
+        console.print("[bold yellow]Reset cancelled.[/bold yellow]")
+        time.sleep(2)
+        return clan_data
 
+def update_datas(type, clan_data):
+    member_list = clan_data['memberInfo']
+
+    for member in member_list:
+        current_score = member_list[member][type]
+        console.print(f"Updating {type} for [yellow]{member_list[member]['name']}[/yellow] (current: [blue]{current_score}[/blue])")
+        new_score = questionary.text(
+                f"Enter new score (press Enter to keep current):"
+            ).ask()
+
+        if new_score.strip():  # If user entered something
+            try:
+                member_list[member][type] = int(new_score)
+                console.print(f"[green]Updated {member_list[member]['name']} score to {new_score}[/green] \n")
+            except ValueError:
+                console.print(f"[red]Invalid input. Keeping current score: {current_score}[/red] \n")
+        else:
+            console.print(f"[yellow]Keeping current score: {current_score}[/yellow] \n")
+    
+    member_list = update_score(member_list)
+    member_list = sort_members_by_score(member_list)
+
+    clan_data['memberInfo'] = member_list
+    write_to_file(clan_data)
+    return clan_data
 
 if __name__ == "__main__":
+    clan_data = asyncio.run(update_data(COC_EMAIL, COC_PASSWORD, CLAN_TAG))
     while True:
         os.system('cls' if os.name == 'nt' else 'clear')
         user_choice = main_menu()
         if user_choice == "View clan ranking":
-            view_clan_ranking()
+            view_clan_ranking(clan_data)
 
         elif user_choice == "Update clan data":
-            update_data_from_api()
+            clan_data = update_data_from_api()
 
         elif user_choice == "Update clan game score":
-            pass
+            clan_data = update_datas("clanGamesScore", clan_data)
 
         elif user_choice == "Update clan war league stars":
-            pass
+            clan_data = update_datas("clanWarLeagueStars", clan_data)
 
         elif user_choice == "Update capital raid score":
-            pass
+            choice = questionary.select(
+                "What week?",
+                choices=[
+                    "Week 1",
+                    "Week 2",
+                    "Week 3",
+                    "Week 4"
+                ]
+            ).ask()
+
+            if choice == "Week 1":
+                type = "capitalAttacksWeek1"
+            elif choice == "Week 2":
+                type = "capitalAttacksWeek2"
+            elif choice == "Week 3":
+                type = "capitalAttacksWeek3"
+            elif choice == "Week 4":
+                type = "capitalAttacksWeek4"
+
+            clan_data = update_datas(type, clan_data)
 
         elif user_choice == "Reset scores":
-            reset_score_menu()
+            clan_data = reset_score_menu(clan_data)
 
         elif user_choice == "Exit":
             break

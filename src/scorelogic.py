@@ -50,14 +50,12 @@ def sort_members_by_score(member_list):
     sorted_member_info_dict = dict(sorted_members)
     return sorted_member_info_dict
 
-def reset_scores():
-    clan_data = read_from_file()
-    member_list = clan_data['memberInfo']
+def reset_scores(member_list):
     for member in member_list:
-        member_list[member]['clanGamesScore'] = 0
-        member_list[member]['clanWarLeagueStars'] = 0
-        member_list[member]['capitalAttacksWeek1'] = 0
-        member_list[member]['capitalAttacksWeek2'] = 0
-        member_list[member]['capitalAttacksWeek3'] = 0
-        member_list[member]['capitalAttacksWeek4'] = 0
+        member_list[member]['clanGamesScore']       = 0
+        member_list[member]['clanWarLeagueStars']   = 0
+        member_list[member]['capitalAttacksWeek1']  = 0
+        member_list[member]['capitalAttacksWeek2']  = 0
+        member_list[member]['capitalAttacksWeek3']  = 0
+        member_list[member]['capitalAttacksWeek4']  = 0
     return update_score(member_list)
