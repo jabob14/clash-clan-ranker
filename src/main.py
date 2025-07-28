@@ -48,9 +48,9 @@ def view_clan_ranking(clan_data):
 
     member_data = clan_data['memberInfo']
 
-    table = Table(show_header=True, header_style="bold magenta")
-    table.add_column("Rank", style="dim", width=6)
-    table.add_column("Name", style="cyan")
+    table = Table(show_header=True, header_style="bold magenta", row_styles=["", "dim"])
+    table.add_column("Rank", width=6)
+    table.add_column("Name", style="green")
     table.add_column("Donations", justify="right")
     table.add_column("CG Score", justify="right")
     table.add_column("CWL Stars", justify="right")
@@ -59,7 +59,7 @@ def view_clan_ranking(clan_data):
     table.add_column("CA W3", justify="right")
     table.add_column("CA W4", justify="right")
     table.add_column("CA Total", justify="right")
-    table.add_column("Total Score", justify="right")
+    table.add_column("Total Score", style = "green", justify="right")
 
     i = 0
     for member in member_data:
