@@ -1,5 +1,5 @@
 {
-    "lastUpdated": "2025-07-28T10:04:15Z",
+    "lastUpdated": "2025-07-28T19:48:43Z",
     "clanInfo": {
         "name": "COC BOYS",
         "level": 12,
@@ -8,10 +8,10 @@
         "badge": "https://api-assets.clashofclans.com/badges/200/2ceu83hC3ZqnB2CosOEtIcOfEunVB8jEGyNo57eYfhs.png"
     },
     "memberInfo": {
-        "#29J0CP0G0": {
-            "name": "BIG-SHAFT",
-            "townhall": 16,
-            "donations": 78,
+        "#2P9QPGC0": {
+            "name": "Teddo",
+            "townhall": 14,
+            "donations": 83,
             "clanGamesScore": 4000,
             "clanWarLeagueStars": 0,
             "capitalAttacks": 12,
@@ -21,10 +21,10 @@
             "capitalAttacksWeek4": 0,
             "totalScore": 6700
         },
-        "#229P2LP2": {
-            "name": "LamaCraft",
-            "townhall": 17,
-            "donations": 0,
+        "#29J0CP0G0": {
+            "name": "BIG-SHAFT",
+            "townhall": 16,
+            "donations": 78,
             "clanGamesScore": 4000,
             "clanWarLeagueStars": 0,
             "capitalAttacks": 12,
@@ -37,7 +37,7 @@
         "#R8PG2VL2": {
             "name": "Vktor",
             "townhall": 16,
-            "donations": 0,
+            "donations": 47,
             "clanGamesScore": 4000,
             "clanWarLeagueStars": 0,
             "capitalAttacks": 12,
@@ -47,9 +47,9 @@
             "capitalAttacksWeek4": 0,
             "totalScore": 5700
         },
-        "#2P9QPGC0": {
-            "name": "Teddo",
-            "townhall": 14,
+        "#229P2LP2": {
+            "name": "LamaCraft",
+            "townhall": 17,
             "donations": 0,
             "clanGamesScore": 4000,
             "clanWarLeagueStars": 0,
@@ -99,6 +99,19 @@
             "capitalAttacksWeek4": 0,
             "totalScore": 5700
         },
+        "#299UQUYGQ": {
+            "name": "Sundsax",
+            "townhall": 13,
+            "donations": 0,
+            "clanGamesScore": 4000,
+            "clanWarLeagueStars": 0,
+            "capitalAttacks": 12,
+            "capitalAttacksWeek1": 6,
+            "capitalAttacksWeek2": 6,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
+            "totalScore": 5700
+        },
         "#QPLU99PVU": {
             "name": "KfftwStardust2",
             "townhall": 11,
@@ -115,19 +128,6 @@
         "#8802VG9R0": {
             "name": "Kfftwminidust",
             "townhall": 8,
-            "donations": 0,
-            "clanGamesScore": 4000,
-            "clanWarLeagueStars": 0,
-            "capitalAttacks": 12,
-            "capitalAttacksWeek1": 6,
-            "capitalAttacksWeek2": 6,
-            "capitalAttacksWeek3": 0,
-            "capitalAttacksWeek4": 0,
-            "totalScore": 5700
-        },
-        "#299UQUYGQ": {
-            "name": "Sundsax",
-            "townhall": 13,
             "donations": 0,
             "clanGamesScore": 4000,
             "clanWarLeagueStars": 0,

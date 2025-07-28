@@ -3,7 +3,6 @@ from clandata import read_from_file
 
 def update_score(member_list):
     top_donator = find_top_donator(member_list)
-
     for member in member_list:
         clan_game_score = calculate_clan_game_score(member_list[member]['clanGamesScore'])
         member_list[member]['capitalAttacks'] = calculate_capital_attack_total(member_list, member)
@@ -14,6 +13,7 @@ def update_score(member_list):
             total_score += TOP_DONATOR_BONUS
         member_list[member]['totalScore'] = total_score
     return member_list
+
 
 def find_top_donator(member_list):
     top_donator = None
@@ -49,6 +49,7 @@ def sort_members_by_score(member_list):
     sorted_members = sorted(member_items, key=lambda item: (item[1]['totalScore'], item[1]['donations']), reverse=True)
     sorted_member_info_dict = dict(sorted_members)
     return sorted_member_info_dict
+
 
 def reset_scores(member_list):
     for member in member_list:

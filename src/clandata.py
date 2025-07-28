@@ -39,6 +39,7 @@ async def get_member_data(members):
         member_list[current_member] = member_info
     return member_list
 
+
 async def get_clan_data(clan):
     clan_info = {
                 "name": clan.name,
@@ -48,6 +49,7 @@ async def get_clan_data(clan):
                 "badge" : clan.badge.url
             }
     return clan_info
+
 
 async def update_data(COC_EMAIL, COC_PASSWORD, CLAN_TAG):
     async with coc.Client() as client:
@@ -78,6 +80,7 @@ async def update_data(COC_EMAIL, COC_PASSWORD, CLAN_TAG):
             print(f"An unexpected error occurred while fetching clan data: {e}")
         return []
     
+
 def create_clan_data(clan_info, member_info):
     now_utc = datetime.now(timezone.utc)
     iso_string = now_utc.isoformat()
@@ -89,6 +92,7 @@ def create_clan_data(clan_info, member_info):
                 "memberInfo" : member_info
             }
     return clan_data
+
 
 def get_current_member_data():
     clan_data = read_from_file()
