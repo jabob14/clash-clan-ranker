@@ -186,7 +186,7 @@ def main_menu(COC_EMAIL, COC_PASSWORD, CLAN_TAG):
 
         elif user_choice == "Update clan data":
             clan_data = asyncio.run(update_data(COC_EMAIL, COC_PASSWORD, CLAN_TAG))
-            time.sleep(2)
+            time.sleep(1)
             console.print("[bold green]Data updated successfully![/bold green]")
             time.sleep(2)
 

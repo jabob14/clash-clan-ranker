@@ -1,5 +1,5 @@
 {
-    "lastUpdated": "2025-07-28T19:48:43Z",
+    "lastUpdated": "2025-07-29T20:22:43Z",
     "clanInfo": {
         "name": "COC BOYS",
         "level": 12,
@@ -8,6 +8,19 @@
         "badge": "https://api-assets.clashofclans.com/badges/200/2ceu83hC3ZqnB2CosOEtIcOfEunVB8jEGyNo57eYfhs.png"
     },
     "memberInfo": {
+        "#RV9UUYJG": {
+            "name": "Vilm888",
+            "townhall": 16,
+            "donations": 154,
+            "clanGamesScore": 4000,
+            "clanWarLeagueStars": 0,
+            "capitalAttacks": 12,
+            "capitalAttacksWeek1": 6,
+            "capitalAttacksWeek2": 6,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
+            "totalScore": 6700
+        },
         "#2P9QPGC0": {
             "name": "Teddo",
             "townhall": 14,
@@ -19,7 +32,7 @@
             "capitalAttacksWeek2": 6,
             "capitalAttacksWeek3": 0,
             "capitalAttacksWeek4": 0,
-            "totalScore": 6700
+            "totalScore": 5700
         },
         "#29J0CP0G0": {
             "name": "BIG-SHAFT",
@@ -63,19 +76,6 @@
         "#JU02QQCG": {
             "name": "Linus",
             "townhall": 13,
-            "donations": 0,
-            "clanGamesScore": 4000,
-            "clanWarLeagueStars": 0,
-            "capitalAttacks": 12,
-            "capitalAttacksWeek1": 6,
-            "capitalAttacksWeek2": 6,
-            "capitalAttacksWeek3": 0,
-            "capitalAttacksWeek4": 0,
-            "totalScore": 5700
-        },
-        "#RV9UUYJG": {
-            "name": "Vilm888",
-            "townhall": 16,
             "donations": 0,
             "clanGamesScore": 4000,
             "clanWarLeagueStars": 0,
