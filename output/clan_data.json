@@ -1,17 +1,17 @@
 {
-    "lastUpdated": "2025-07-29T20:22:43Z",
+    "lastUpdated": "2025-08-01T16:05:26Z",
     "clanInfo": {
         "name": "COC BOYS",
         "level": 12,
-        "members": 33,
+        "members": 34,
         "description": "V\u00e4lkommen till COC BOYS! \ud83e\udd8d                                                \u2022Attackera alltid i CWL och CW om du \u00e4r med.                                 \u2022Alltid 50,000 points i clan games.                            \u2022Maxad clan capital.",
         "badge": "https://api-assets.clashofclans.com/badges/200/2ceu83hC3ZqnB2CosOEtIcOfEunVB8jEGyNo57eYfhs.png"
     },
     "memberInfo": {
-        "#RV9UUYJG": {
-            "name": "Vilm888",
+        "#29J0CP0G0": {
+            "name": "BIG-SHAFT",
             "townhall": 16,
-            "donations": 154,
+            "donations": 383,
             "clanGamesScore": 4000,
             "clanWarLeagueStars": 0,
             "capitalAttacks": 12,
@@ -24,20 +24,7 @@
         "#2P9QPGC0": {
             "name": "Teddo",
             "townhall": 14,
-            "donations": 83,
-            "clanGamesScore": 4000,
-            "clanWarLeagueStars": 0,
-            "capitalAttacks": 12,
-            "capitalAttacksWeek1": 6,
-            "capitalAttacksWeek2": 6,
-            "capitalAttacksWeek3": 0,
-            "capitalAttacksWeek4": 0,
-            "totalScore": 5700
-        },
-        "#29J0CP0G0": {
-            "name": "BIG-SHAFT",
-            "townhall": 16,
-            "donations": 78,
+            "donations": 160,
             "clanGamesScore": 4000,
             "clanWarLeagueStars": 0,
             "capitalAttacks": 12,
@@ -50,7 +37,7 @@
         "#R8PG2VL2": {
             "name": "Vktor",
             "townhall": 16,
-            "donations": 47,
+            "donations": 130,
             "clanGamesScore": 4000,
             "clanWarLeagueStars": 0,
             "capitalAttacks": 12,
@@ -63,7 +50,7 @@
         "#229P2LP2": {
             "name": "LamaCraft",
             "townhall": 17,
-            "donations": 0,
+            "donations": 66,
             "clanGamesScore": 4000,
             "clanWarLeagueStars": 0,
             "capitalAttacks": 12,
@@ -76,6 +63,19 @@
         "#JU02QQCG": {
             "name": "Linus",
             "townhall": 13,
+            "donations": 2,
+            "clanGamesScore": 4000,
+            "clanWarLeagueStars": 0,
+            "capitalAttacks": 12,
+            "capitalAttacksWeek1": 6,
+            "capitalAttacksWeek2": 6,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
+            "totalScore": 5700
+        },
+        "#RV9UUYJG": {
+            "name": "Vilm888",
+            "townhall": 16,
             "donations": 0,
             "clanGamesScore": 4000,
             "clanWarLeagueStars": 0,
@@ -88,7 +88,7 @@
         },
         "#202LJGYLL": {
             "name": "KfftwStardustYT",
-            "townhall": 15,
+            "townhall": 16,
             "donations": 0,
             "clanGamesScore": 4000,
             "clanWarLeagueStars": 0,
@@ -141,7 +141,7 @@
         "#8Q2RVGQV2": {
             "name": "SUPER GUBBEN!!!",
             "townhall": 17,
-            "donations": 0,
+            "donations": 237,
             "clanGamesScore": 4000,
             "clanWarLeagueStars": 0,
             "capitalAttacks": 6,
@@ -219,7 +219,7 @@
         "#9CJJGU2V8": {
             "name": "andreas",
             "townhall": 15,
-            "donations": 0,
+            "donations": 1,
             "clanGamesScore": 1500,
             "clanWarLeagueStars": 0,
             "capitalAttacks": 12,
@@ -319,6 +319,19 @@
             "capitalAttacksWeek3": 0,
             "capitalAttacksWeek4": 0,
             "totalScore": 150
+        },
+        "#PGPC90RU2": {
+            "name": "sabu",
+            "townhall": 17,
+            "donations": 0,
+            "clanGamesScore": 0,
+            "clanWarLeagueStars": 0,
+            "capitalAttacks": 0,
+            "capitalAttacksWeek1": 0,
+            "capitalAttacksWeek2": 0,
+            "capitalAttacksWeek3": 0,
+            "capitalAttacksWeek4": 0,
+            "totalScore": 0
         },
         "#QQPYL0UV": {
             "name": "max",
