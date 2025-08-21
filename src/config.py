@@ -5,6 +5,7 @@ clan_games_scores_values        = [0, 2000, 4000]
 clan_war_league_stars_values    = [0, 8, 15]
 capital_raid_score_values       = [0, 3, 6]
 total_capital_attacks_values    = [0, 12, 24]
+bonus_score_values              = [-1, 0, 1]
 total_score_values              = [0, "placeholder", "placeholder"]
 
 

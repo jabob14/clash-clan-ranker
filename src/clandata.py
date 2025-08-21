@@ -14,9 +14,11 @@ async def get_member_data(members):
                         "name": member.name,
                         "townhall": member.town_hall,
                         "donations": member.donations,
+                        "bonusScore": 0
                     }
 
         if current_member not in current_members:
+            # If member does not exist, initialize their scores
             member_info["clanGamesScore"]       = 0
             member_info["clanWarLeagueStars"]   = 0
             member_info["capitalAttacks"]       = 0
@@ -24,17 +26,20 @@ async def get_member_data(members):
             member_info["capitalAttacksWeek2"]  = 0
             member_info["capitalAttacksWeek3"]  = 0
             member_info["capitalAttacksWeek4"]  = 0
+            member_info["bonusScore"]           = 0
             member_info["totalScore"]           = 0
+        
         else:
-            member_info["clanGamesScore"] = current_member_data[current_member]["clanGamesScore"]
-            member_info["clanWarLeagueStars"] = current_member_data[current_member]["clanWarLeagueStars"]
-            member_info["capitalAttacks"] = current_member_data[current_member]["capitalAttacks"]
-            member_info["capitalAttacksWeek1"] = current_member_data[current_member]["capitalAttacksWeek1"]
-            member_info["capitalAttacksWeek2"] = current_member_data[current_member]["capitalAttacksWeek2"]
-            member_info["capitalAttacksWeek3"] = current_member_data[current_member]["capitalAttacksWeek3"]
-            member_info["capitalAttacksWeek4"] = current_member_data[current_member]["capitalAttacksWeek4"]
-            member_info["totalScore"] = current_member_data[current_member]["totalScore"]
-
+            # If member exists load in their current score
+            member_info["clanGamesScore"]       = current_member_data[current_member]["clanGamesScore"]
+            member_info["clanWarLeagueStars"]   = current_member_data[current_member]["clanWarLeagueStars"]
+            member_info["capitalAttacks"]       = current_member_data[current_member]["capitalAttacks"]
+            member_info["capitalAttacksWeek1"]  = current_member_data[current_member]["capitalAttacksWeek1"]
+            member_info["capitalAttacksWeek2"]  = current_member_data[current_member]["capitalAttacksWeek2"]
+            member_info["capitalAttacksWeek3"]  = current_member_data[current_member]["capitalAttacksWeek3"]
+            member_info["capitalAttacksWeek4"]  = current_member_data[current_member]["capitalAttacksWeek4"]
+            member_info["bonusScore"]           = current_member_data[current_member]["bonusScore"]
+            member_info["totalScore"]           = current_member_data[current_member]["totalScore"]
 
         member_list[current_member] = member_info
     return member_list

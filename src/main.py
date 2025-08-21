@@ -42,6 +42,7 @@ def view_clan_ranking(clan_data):
     table.add_column("CA W3",       justify = "right", min_width = WIDTH)
     table.add_column("CA W4",       justify = "right", min_width = WIDTH)
     table.add_column("CA Total",    justify = "right", min_width = WIDTH)
+    table.add_column("Bonus Score", justify = "right", min_width = WIDTH)
     table.add_column("Total Score", justify = "right", min_width = WIDTH)
 
     possition = 0
@@ -71,6 +72,12 @@ def view_clan_ranking(clan_data):
         total_capital_attacks_style = get_color_for_score(member_total_capital_attacks, total_capital_attacks_values)
         total_capital_attacks_text = f"[{total_capital_attacks_style}]{member_total_capital_attacks}[/]"
 
+
+        # Determine color of the bonus score
+        bonus_score = member_data[member]['bonusScore']
+        bonus_score_style = get_color_for_score(bonus_score, bonus_score_values)
+        bonus_score_text = f"[{bonus_score_style}]{bonus_score}[/]"
+
         # Determine color of the score
         total_score = member_data[member]['totalScore']
         score_style = get_color_for_score(total_score, total_score_values)
@@ -87,6 +94,7 @@ def view_clan_ranking(clan_data):
             capital_raid_score_texts[2],
             capital_raid_score_texts[3],
             total_capital_attacks_text,
+            bonus_score_text,
             total_score_text
         )
 

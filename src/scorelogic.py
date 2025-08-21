@@ -8,7 +8,8 @@ def update_score(member_list):
         member_list[member]['capitalAttacks'] = calculate_capital_attack_total(member_list, member)
         raid_score = member_list[member]['capitalAttacks'] * CAPITAL_RAID_REWARD
         cwl_score = member_list[member]['clanWarLeagueStars'] * CWL_STAR_REWARD
-        total_score = clan_game_score + raid_score + cwl_score
+        bonus_score = member_list[member]['bonusScore']
+        total_score = clan_game_score + raid_score + cwl_score + bonus_score
         if top_donator == member:
             total_score += TOP_DONATOR_BONUS
         member_list[member]['totalScore'] = total_score
