@@ -33,6 +33,7 @@ def calculate_capital_attack_total(member_list, member):
     total_attacks += member_list[member]['capitalAttacksWeek2']
     total_attacks += member_list[member]['capitalAttacksWeek3']
     total_attacks += member_list[member]['capitalAttacksWeek4']
+    total_attacks += member_list[member]['capitalAttacksWeek5']
     return total_attacks
 
 

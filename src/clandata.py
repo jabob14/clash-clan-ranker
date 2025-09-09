@@ -26,6 +26,7 @@ async def get_member_data(members):
             member_info["capitalAttacksWeek2"]  = 0
             member_info["capitalAttacksWeek3"]  = 0
             member_info["capitalAttacksWeek4"]  = 0
+            member_info["capitalAttacksWeek5"]  = 0
             member_info["bonusScore"]           = 0
             member_info["totalScore"]           = 0
         
@@ -38,6 +39,7 @@ async def get_member_data(members):
             member_info["capitalAttacksWeek2"]  = current_member_data[current_member]["capitalAttacksWeek2"]
             member_info["capitalAttacksWeek3"]  = current_member_data[current_member]["capitalAttacksWeek3"]
             member_info["capitalAttacksWeek4"]  = current_member_data[current_member]["capitalAttacksWeek4"]
+            member_info["capitalAttacksWeek5"]  = current_member_data[current_member]["capitalAttacksWeek5"]
             member_info["bonusScore"]           = current_member_data[current_member]["bonusScore"]
             member_info["totalScore"]           = current_member_data[current_member]["totalScore"]
 
@@ -47,11 +49,11 @@ async def get_member_data(members):
 
 async def get_clan_data(clan):
     clan_info = {
-                "name": clan.name,
-                "level": clan.level,
-                "members": clan.member_count,
-                "description" : clan.description,
-                "badge" : clan.badge.url
+                "name":         clan.name,
+                "level":        clan.level,
+                "members":      clan.member_count,
+                "description":  clan.description,
+                "badge":        clan.badge.url
             }
     return clan_info
 
@@ -93,8 +95,8 @@ def create_clan_data(clan_info, member_info):
 
     clan_data = {
                 "lastUpdated" : timestamp_str,
-                "clanInfo" : clan_info,
-                "memberInfo" : member_info
+                "clanInfo" :    clan_info,
+                "memberInfo" :  member_info
             }
     return clan_data
 

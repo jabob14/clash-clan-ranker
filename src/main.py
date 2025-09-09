@@ -41,13 +41,14 @@ def view_clan_ranking(clan_data):
     table.add_column("CA W2",       justify = "right", min_width = WIDTH)
     table.add_column("CA W3",       justify = "right", min_width = WIDTH)
     table.add_column("CA W4",       justify = "right", min_width = WIDTH)
+    table.add_column("CA W5",       justify = "right", min_width = WIDTH)
     table.add_column("CA Total",    justify = "right", min_width = WIDTH)
     table.add_column("Bonus Score", justify = "right", min_width = WIDTH)
     table.add_column("Total Score", justify = "right", min_width = WIDTH)
 
-    possition = 0
+    position = 0
     for member in member_data:
-        possition += 1
+        position += 1
         
         # Determine color of the clan game score
         cg_score = member_data[member]['clanGamesScore']
@@ -61,7 +62,7 @@ def view_clan_ranking(clan_data):
 
         # Determine color of the capital raid score
         capital_raid_score_texts = []
-        for week in range(1, 5):
+        for week in range(1, 6):
             week_key = f'capitalAttacksWeek{week}'
             week_score = member_data[member][week_key]
             week_style = get_color_for_score(week_score, capital_raid_score_values)
@@ -84,7 +85,7 @@ def view_clan_ranking(clan_data):
         total_score_text = f"[{score_style}]{total_score}[/]"
 
         table.add_row(
-            f"{possition}",
+            f"{position}",
             f"{member_data[member]['name']}",
             f"{member_data[member]['donations']}",
             cg_score_text,
@@ -93,6 +94,7 @@ def view_clan_ranking(clan_data):
             capital_raid_score_texts[1],
             capital_raid_score_texts[2],
             capital_raid_score_texts[3],
+            capital_raid_score_texts[4],
             total_capital_attacks_text,
             bonus_score_text,
             total_score_text

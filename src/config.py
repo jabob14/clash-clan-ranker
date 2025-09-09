@@ -22,5 +22,6 @@ WEEK_MAPPING = {
     "Week 1": "capitalAttacksWeek1",
     "Week 2": "capitalAttacksWeek2",
     "Week 3": "capitalAttacksWeek3",
-    "Week 4": "capitalAttacksWeek4"
+    "Week 4": "capitalAttacksWeek4",
+    "Week 5": "capitalAttacksWeek5"
 }       
