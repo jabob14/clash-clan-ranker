@@ -9,6 +9,7 @@ body {
   background-color: #e8e8e0;
   font-family: 'ClanFont', Arial, sans-serif;
   margin: 20px;
+  letter-spacing: 0.03em;
 }
 
 /* --- Huvud-header för klanen --- */
