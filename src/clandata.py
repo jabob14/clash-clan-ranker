@@ -40,7 +40,7 @@ async def get_member_data(members):
             member_info["capitalAttacksWeek3"]  = current_member_data[current_member]["capitalAttacksWeek3"]
             member_info["capitalAttacksWeek4"]  = current_member_data[current_member]["capitalAttacksWeek4"]
             member_info["capitalAttacksWeek5"]  = current_member_data[current_member]["capitalAttacksWeek5"]
-            member_info["bonusScore"]           = current_member_data[current_member]["bonusScore"]
+            member_info["bonusScore"]           = 0
             member_info["totalScore"]           = current_member_data[current_member]["totalScore"]
 
         member_list[current_member] = member_info
