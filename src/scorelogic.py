@@ -61,4 +61,5 @@ def reset_scores(member_list):
         member_list[member]['capitalAttacksWeek2']  = 0
         member_list[member]['capitalAttacksWeek3']  = 0
         member_list[member]['capitalAttacksWeek4']  = 0
+        member_list[member]['capitalAttacksWeek5']  = 0
     return update_score(member_list)
