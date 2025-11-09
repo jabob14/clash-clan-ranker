@@ -57,6 +57,7 @@ def reset_scores(member_list):
     for member in member_list:
         member_list[member]['clanGamesScore']       = 0
         member_list[member]['clanWarLeagueStars']   = 0
+        member_list[member]['bonusScore']           = 0
         member_list[member]['capitalAttacksWeek1']  = 0
         member_list[member]['capitalAttacksWeek2']  = 0
         member_list[member]['capitalAttacksWeek3']  = 0
